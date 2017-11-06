@@ -1,0 +1,12 @@
+streams:
+ schemes:
+   theme:
+     type: ReadOnlyStream
+     prefixes:
+       '':
+         - user/themes/woo
+         - user/themes/notepad
+enabled: true
+color: blue
+dropdown:
+  enabled: true

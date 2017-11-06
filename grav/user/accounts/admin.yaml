@@ -1,0 +1,10 @@
+email: nobody@nowhere.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: Grav Administrator
+title: Grav Administrator
+hashed_password: $2y$10$zjxeOOWMpti7zUVgYK94Y.GTlYcdPog886LSUBO5siH8DudAVBQ9G
