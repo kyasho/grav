@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/apps/www/grav/user/plugins/admin/blueprints/config/media.yaml',
-    'modified' => 1468719974,
+    'modified' => 1510326714,
     'data' => [
         'title' => 'PLUGIN_ADMIN.MEDIA',
         'form' => [
@@ -12,8 +12,10 @@ return [
                     'name' => 'medias',
                     'type' => 'list',
                     'label' => 'PLUGIN_ADMIN.MEDIA_TYPES',
+                    'style' => 'vertical',
                     'key' => 'extension',
-                    'sort' => false,
+                    'controls' => 'both',
+                    'collapsed' => true,
                     'fields' => [
                         '.extension' => [
                             'type' => 'key',
@@ -29,7 +31,10 @@ return [
                         ],
                         '.mime' => [
                             'type' => 'text',
-                            'label' => 'PLUGIN_ADMIN.MIME_TYPE'
+                            'label' => 'PLUGIN_ADMIN.MIME_TYPE',
+                            'validate' => [
+                                'type' => 'lower'
+                            ]
                         ],
                         '.image' => [
                             'type' => 'textarea',

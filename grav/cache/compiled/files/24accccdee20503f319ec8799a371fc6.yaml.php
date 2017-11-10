@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/apps/www/grav/user/config/system.yaml',
-    'modified' => 1509821736,
+    'modified' => 1509822847,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -26,7 +26,7 @@ return [
             'hide_in_urls' => false
         ],
         'pages' => [
-            'theme' => 'flaten',
+            'theme' => 'gravstrap-theme',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1509822847,
-    'checksum' => '327377aebd7a1f13199d138b7c0d5189',
+    'timestamp' => 1510326714,
+    'checksum' => '6f9858f6bdddb80f155a4154ae89a3bd',
     'files' => [
         'user/config' => [
             'media' => [
@@ -111,7 +111,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1468719974
+                'modified' => 1468633306
             ],
             'plugins/blog-injector' => [
                 'file' => 'user/plugins/blog-injector/blog-injector.yaml',
@@ -131,7 +131,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1468719974
+                'modified' => 1510326714
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
@@ -139,7 +139,7 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1468719974
+                'modified' => 1468633306
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
@@ -147,19 +147,19 @@ return [
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1468719974
+                'modified' => 1468633306
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1468719974
+                'modified' => 1468633306
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1468719974
+                'modified' => 1468633306
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1468719974
+                'modified' => 1468633306
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
@@ -298,9 +298,12 @@ return [
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
+                'cache_enabled' => false,
                 'theme' => 'grav',
                 'logo_text' => '',
                 'body_classes' => '',
+                'content_padding' => true,
+                'twofa_enabled' => true,
                 'sidebar' => [
                     'activate' => 'tab',
                     'hover_delay' => 100,
@@ -309,6 +312,16 @@ return [
                 'dashboard' => [
                     'days_of_stats' => 7
                 ],
+                'widgets' => [
+                    'dashboard-maintenance' => true,
+                    'dashboard-statistics' => true,
+                    'dashboard-notifications' => true,
+                    'dashboard-feed' => true,
+                    'dashboard-pages' => true
+                ],
+                'pages' => [
+                    'show_parents' => 'both'
+                ],
                 'session' => [
                     'timeout' => 1800
                 ],
@@ -316,9 +329,17 @@ return [
                     'delete_page' => true
                 ],
                 'edit_mode' => 'normal',
+                'frontend_pages_target' => '_blank',
                 'show_github_msg' => true,
+                'pages_list_display_field' => 'title',
                 'google_fonts' => true,
                 'enable_auto_updates_check' => true,
+                'notifications' => [
+                    'feed' => true,
+                    'dashboard' => true,
+                    'plugins' => true,
+                    'themes' => true
+                ],
                 'popularity' => [
                     'enabled' => true,
                     'ignore' => [
